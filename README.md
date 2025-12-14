@@ -53,29 +53,29 @@ cd Travease
 
 #### a. Navigate to the backend folder:
 
-
+```bash
 cd Travels_App_DjangRF/travels
-
+```
 
 #### b. Create virtual environment and activate it:
 
-
+```bash
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
-
+```
 
 #### c. Install dependencies:
 
-
+```bash
 pip install -r requirements.txt
-
+```
 
 #### d. Apply migrations and run the server:
 
-
+```bash
 python manage.py migrate
 python manage.py runserver
-
+```
 
 > 📌 Backend will run on: `http://127.0.0.1:8000` or deployed Render URL
 
@@ -85,23 +85,23 @@ python manage.py runserver
 
 #### a. Navigate to the frontend folder:
 
-
+```bash
 cd ../React_travels/travels
-
+```
 
 #### b. Install dependencies:
 
-
+```bash
 npm install
-
+```
 
 #### c. Start the React development server:
 
-
+```bash
 npm start
 (or)
 npm run dev
-
+```
 
 > 📌 Frontend runs on: `http://localhost:5173`
 
