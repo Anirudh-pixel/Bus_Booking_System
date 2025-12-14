@@ -144,7 +144,7 @@ This allows React routes to work properly on page reload.
 ## 📧 Contact
 
 For any issues or suggestions, feel free to contact:
-- Anirudh Vempati - anirudheu.05@gmail.com
+- Anirudh Vempati - anirudhedu.05@gmail.com
 
 ---
 
