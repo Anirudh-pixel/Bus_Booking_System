@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u!x%7#q!+b$8$(vma2bxw#*b!*@2w!c$n$3w_9ok8-1jp_)_3h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["travease-backend.onrender.com","127.0.0.1","localhost"]
 
 
 # Application definition
@@ -54,6 +54,7 @@ REST_FRAMEWORK = {
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',  # Must be first
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -64,6 +65,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5174",
+    "https://traveasepage.onrender.com"
 ]
 
 
@@ -141,6 +143,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT= BASE_DIR / "staticfiles"
+STATICFILES_STORAGE= "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
